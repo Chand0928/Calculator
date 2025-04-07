@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.input {
+    width: 100%;
+    font-size: 32px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #034941;
+    color: #fff;
+    text-align: right;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input:focus {
+    background: #333;
+}
+
+.button {
+    background: #444;
+    color: #fff;
+    border: 1px solid #333;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.button:hover {
+    background: #666;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background: #888;
+    transform: scale(0.95);
+}
+
+/* Special button styles */
+.button.special {
+    background: #ff6f61;
+    color: #fff;
+}
+
+.button.special:hover {
+    background: #ff4b3e;
+}
+
+.button.special:active {
+    background: #e63e2f;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.row button {
+   width: 60px;
+
+}
+
+@media (max-width: 400px) {
+    .button {
+        padding: 15px;
+        font-size: 18px;
+    }
+    .input {
+        font-size: 28px;
+        padding: 10px;
+    }
+}
