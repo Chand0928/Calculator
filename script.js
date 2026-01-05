@@ -31,7 +31,6 @@ Array.from(buttons).forEach((button) => {
 
         if (buttonText === "=") {
             try {
-                // Attempt to evaluate the expression
                 string = eval(string);
                 if (isNaN(string) || string === Infinity || string === -Infinity) {
                     throw new Error("Invalid Calculation");
@@ -39,7 +38,7 @@ Array.from(buttons).forEach((button) => {
                 document.querySelector('input').value = string;
             } catch (error) {
                 document.querySelector('input').value = "Error";
-                string = ""; // Clear the string for new input after error
+                string = ""; 
             }
         } 
         else if (buttonText.toLowerCase() === "c") {
@@ -47,13 +46,10 @@ Array.from(buttons).forEach((button) => {
             document.querySelector('input').value = string;
         } 
         else {
-            // Prevent invalid characters
             if (["+", "-", "*", "/"].includes(buttonText) && !string) {
-                // Disallow starting with an operator
                 return;
             }
             if (buttonText === "." && string.endsWith(".")) {
-                // Prevent multiple dots in a number
                 return;
             }
             string += buttonText;
@@ -63,6 +59,3 @@ Array.from(buttons).forEach((button) => {
 });
 
 
-
-
-//  make m+ M- and Mc Function al
