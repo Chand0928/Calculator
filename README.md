@@ -34,4 +34,5 @@ Strengthen my JavaScript fundamentals
 Practice DOM manipulation
 Build a real, usable mini-project
 Maintain clean and structured code
-It’s a great starting point for beginners learning JavaScript or anyone looking for a simple calculator implementation
+It’s a great starting point for beginners learning JavaScript or anyone looking for a simple calculator implementation 
+
