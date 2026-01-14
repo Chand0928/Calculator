@@ -2,7 +2,7 @@
 A simple, responsive, and user-friendly Calculator Web Application built using HTML, CSS, and JavaScript.
 This project demonstrates core JavaScript logic, DOM manipulation, and clean UI styling.
 🚀 Features
-➕ Basic arithmetic operations
+➕ Basic arithmetic operations.
 Addition
 Subtraction
 Multiplication
